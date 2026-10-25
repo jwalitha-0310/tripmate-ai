@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables (keep secrets private)
+.env
+.env.*
+!.env.example
+
+# Backend dependencies
+backend/node_modules/
+
+# Backend logs
+backend/logs/

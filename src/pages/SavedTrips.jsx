@@ -34,7 +34,7 @@ function SavedTrips({ savedTrips, onViewTrip, onDeleteTrip }) {
             {savedTrips.map((trip) => (
               <article
                 className="saved-trip-card"
-                key={trip.id}
+                key={trip._id}
               >
                 <div className="saved-trip-image">
                   <img
@@ -80,7 +80,7 @@ function SavedTrips({ savedTrips, onViewTrip, onDeleteTrip }) {
 
                     <button
                       className="delete-trip-btn"
-                      onClick={() => onDeleteTrip(trip.id)}
+                      onClick={() => onDeleteTrip(trip._id)}
                     >
                       Delete
                     </button>
